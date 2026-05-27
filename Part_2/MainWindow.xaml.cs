@@ -129,7 +129,7 @@ namespace CybersecurityChatbot
 
             var label = new TextBlock
             {
-                Text = $"🤖 CyberBot  •  {DateTime.Now:HH:mm}",
+                Text = $"CyberBot  •  {DateTime.Now:HH:mm}",
                 Foreground = new SolidColorBrush(Color.FromRgb(0, 191, 255)),
                 FontSize = 10,
                 Margin = new Thickness(0, 0, 0, 4)
