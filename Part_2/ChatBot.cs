@@ -140,13 +140,13 @@ namespace CybersecurityChatbot
 
             if (lowerInput.Contains("who are you") || lowerInput.Contains("your name"))
             {
-                return "I'm CyberBot 🤖 — your cybersecurity awareness assistant! I'm here to help you understand online threats and how to stay safe.";
+                return "I'm CyberBot — your cybersecurity awareness assistant! I'm here to help you understand online threats and how to stay safe.";
             }
 
             if (lowerInput.Contains("bye") || lowerInput.Contains("goodbye") || lowerInput.Contains("exit") || lowerInput.Contains("thank you"))
             {
                 string name = _memory.HasName() ? $", {_memory.UserName}" : "";
-                return $"Stay safe online{name}! 🛡️ Remember: Think before you click. Goodbye!";
+                return $"Stay safe online{name}! Remember: Think before you click. Goodbye!";
             }
 
             // ── Step 7: Fallback ───────────────────────────────────────────────────
@@ -185,7 +185,7 @@ namespace CybersecurityChatbot
         private string? TryExtractFavouriteTopic(string lowerInput)
         {
             // Detect "I am interested in X" or "I like X"
-            var patterns = new[] { "interested in ", "i like ", "i love ", "passionate about " };
+            var patterns = new[] { "interested in ", "i like ", "i love ", "passionate about ", "i hate" };
             foreach (string pattern in patterns)
             {
                 if (lowerInput.Contains(pattern))
