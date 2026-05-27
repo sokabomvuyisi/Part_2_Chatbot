@@ -45,7 +45,7 @@ namespace CybersecurityChatbot
         /// <summary>Returns the opening greeting message shown on app launch.</summary>
         public string GetGreeting()
         {
-            return "👋 Hello! I'm CyberBot, your personal cybersecurity assistant.\n\nBefore we begin, what's your name?";
+            return "Hello! I'm CyberBot, your personal cybersecurity assistant.\n\nBefore we begin, what's your name?";
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace CybersecurityChatbot
         public string ProcessInput(string input)
         {
             if (string.IsNullOrWhiteSpace(input))
-                return "Please type a message so I can help you! 😊";
+                return "Please type a message so I can help you! :)";
 
             input = input.Trim();
             string lowerInput = input.ToLower();
@@ -68,7 +68,7 @@ namespace CybersecurityChatbot
                 _memory.Store("name", name);
                 _awaitingName = false;
 
-                return $"Nice to meet you, {name}! 🛡️\n\n" +
+                return $"Nice to meet you, {name}! \n\n" +
                        $"I'm here to help you stay safe in the digital world. " +
                        $"You can ask me about topics like passwords, phishing, malware, scams, privacy, VPNs, firewalls, and encryption.\n\n" +
                        $"What would you like to know about today, {name}?";
