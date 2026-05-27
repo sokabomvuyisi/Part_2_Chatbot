@@ -6,13 +6,10 @@ CyberBot is a Windows desktop chatbot built with C# and WPF that educates users 
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Requirements](#requirements)
-- [Setup & Installation](#setup--installation)
-- [How to Use](#how-to-use)
-- [Topics CyberBot Knows](#topics-cyberbot-knows)
-- [Project Structure](#project-structure)
-- [Example Interactions](#example-interactions)
+- [Features]
+- [Requirements]
+- [Project Structure]
+- [Example Interactions]
 
 ---
 
