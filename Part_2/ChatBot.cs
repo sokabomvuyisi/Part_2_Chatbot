@@ -118,7 +118,7 @@ namespace CybersecurityChatbot
                 string personalisedOpener = BuildPersonalisedOpener(matchedKeyword);
 
                 string fullResponse = sentimentOpener + personalisedOpener + keywordResponse;
-                fullResponse += "\n\n💡 Type 'tell me more' if you'd like another tip on this topic.";
+                fullResponse += "\n\n Type 'tell me more' if you'd like another tip on this topic.";
                 return fullResponse;
             }
 
@@ -126,14 +126,14 @@ namespace CybersecurityChatbot
             if (lowerInput.Contains("how are you"))
             {
                 string name = _memory.HasName() ? $", {_memory.UserName}" : "";
-                return $"I'm running at full capacity{name}! 🤖 Ready to help you stay safe online. What cybersecurity topic can I help with?";
+                return $"I'm running at full capacity{name}! Ready to help you stay safe online. What cybersecurity topic can I help with?";
             }
 
             if (lowerInput.Contains("what can you do") || lowerInput.Contains("help") || lowerInput.Contains("purpose"))
             {
                 var keywords = _keywords.GetAllKeywords();
                 return $"I'm a cybersecurity awareness chatbot! Here's what I can help with:\n\n" +
-                       $"🔐 Topics I know: {string.Join(", ", keywords)}\n\n" +
+                       $"Topics I know: {string.Join(", ", keywords)}\n\n" +
                        $"Just ask me anything about these topics, or type something like:\n" +
                        $"• 'Tell me about phishing'\n• 'How do I create a strong password?'\n• 'I'm worried about scams'";
             }
